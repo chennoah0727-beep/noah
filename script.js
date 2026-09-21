@@ -79,6 +79,9 @@
   const MUSIC_LIST = [
     { name: '风吹过的时候', file: 'assets/music/fengchui.mp3' },
     { name: '你生而带翼', file: 'assets/music/youshengdaiyi.mp3' },
+    { name: '宽阔之地', file: 'assets/music/宽阔之地.mp3' },
+    { name: '你是我的盾牌', file: 'assets/music/你是我的盾牌.mp3' },
+    { name: '深水之中', file: 'assets/music/深水之中.mp3' },
     { name: '回家', file: '' },
     { name: '光', file: '' },
     { name: '创造我的人生', file: '' }
@@ -186,8 +189,7 @@
       journal: `
         <div class="modal-eyebrow">NOAH'S JOURNAL</div>
         <h3>思想实验室</h3>
-        <p>这里会逐渐收录我关于生命、教育、行动、AI、财富、家庭与创造的长期思考。网站上线后，可以把文章卡片替换为真实文章链接或 Markdown/静态页面。</p>
-        <div class="modal-tip">下一步可以把你的公众号文章、视频号内容、课程笔记批量接入这里，形成个人知识库。</div>
+        <p>这里会逐渐收录我关于生命、教育、行动、AI、财富、家庭与创造的长期思考。</p>
       `,
       connect: `
         <div class="modal-eyebrow">LET'S CONNECT</div>
