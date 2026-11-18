@@ -79,6 +79,12 @@
   const MUSIC_LIST = [
     { name: '风吹过的时候', file: 'assets/music/fengchui.mp3' },
     { name: '你生而带翼', file: 'assets/music/youshengdaiyi.mp3' },
+    { name: '原来你一直都在', file: 'assets/music/原来你一直都在.mp3' },
+    { name: '你生而带翼（演绎）', file: 'assets/music/你生而带翼（演绎）.MP3' },
+    { name: '你是我的盾牌', file: 'assets/music/你是我的盾牌.mp3' },
+    { name: '有扇门为你而开', file: 'assets/music/有扇门为你而开.MP3' },
+    { name: '荒野开花', file: 'assets/music/荒野开花.MP3' },
+    { name: '宽阔之地', file: 'assets/music/宽阔之地.mp3' },
     { name: '回家', file: '' },
     { name: '光', file: '' },
     { name: '创造我的人生', file: '' }
@@ -129,7 +135,7 @@
         <div class="music-list">
           ${MUSIC_LIST.map((m, i) => `
             <button type="button" class="music-item${m.file ? '' : ' disabled'}" data-idx="${i}"${m.file ? '' : ' disabled'}>
-              <span class="music-idx">0${i + 1}</span>
+              <span class="music-idx">${String(i + 1).padStart(2, '0')}</span>
               <span class="music-name">《${m.name}》</span>
               <span class="music-state">${m.file ? '<i class="music-play">▶</i>' : '即将上架'}</span>
             </button>`).join('')}
@@ -144,7 +150,7 @@
         <div class="writing-list">
           ${WRITING_LIST.map((a, i) => `
             <a class="writing-item" href="${a.url}" target="_blank" rel="noopener">
-              <span class="writing-idx">0${i + 1}</span>
+              <span class="writing-idx">${String(i + 1).padStart(2, '0')}</span>
               <span class="writing-name">${a.title}</span>
               <span class="writing-state">阅读 ↗</span>
             </a>`).join('')}

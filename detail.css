@@ -34,3 +34,5 @@
 .service-lead{font-weight:700}
 .service-contact{display:flex;align-items:center;flex-wrap:wrap;gap:12px 18px;margin-top:16px}
 .service-contact a{min-height:44px;display:inline-flex;align-items:center}
+
+.outcome-card a{display:block}.outcome-card img{max-height:290px;object-fit:contain;background:#ededed}.outcome-card p{margin:.4em 0 0}
